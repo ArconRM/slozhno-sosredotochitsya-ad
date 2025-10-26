@@ -1,5 +1,36 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    font-family: 'IBM Plex mono', monospace;
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.decorated-zone {
+    position: relative;
+    display: grid;
+    padding: 0 clamp(10px, 0.0286rem + 2.5445vw, 20px);
+    min-height: 100vh;
+}
+
+.decorated-zone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-right: 1px solid var(--accent-color, #ff0070);
+    border-top: 1px solid var(--accent-color, #ff0070);
+}
+
+.decorated-zone::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-left: 1px solid var(--accent-color, #ff0070);
+    border-bottom: 1px solid var(--accent-color, #ff0070);
 }
