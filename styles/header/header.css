@@ -103,6 +103,8 @@
     grid-row: 3;
     justify-self: end;
     /*max-width: 491px;*/
+
+    margin-top: -22px;
 }
 
 .header__description-text {
