@@ -1,36 +1,48 @@
 .page {
-    font-family: 'IBM Plex mono', monospace;
+    background-color: var(--bg-color);
     background-image: var(--bg-image);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
+    font-family: 'IBM Plex mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 .decorated-zone {
     position: relative;
+
     display: grid;
-    padding: 0 clamp(10px, 0.0286rem + 2.5445vw, 20px);
+
     min-height: 100vh;
+    margin: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::before {
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
+
     width: 25px;
     height: 25px;
-    border-right: 1px solid var(--accent-color, #ff0070);
-    border-top: 1px solid var(--accent-color, #ff0070);
+
+    content: '';
+
+    border-top: 1px solid var(--decorated-zone-border-color, #ff0070);
+    border-right: 1px solid var(--decorated-zone-border-color, #ff0070);
 }
 
 .decorated-zone::after {
-    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
+
     width: 25px;
     height: 25px;
-    border-left: 1px solid var(--accent-color, #ff0070);
-    border-bottom: 1px solid var(--accent-color, #ff0070);
+
+    content: '';
+
+    border-bottom: 1px solid var(--decorated-zone-border-color, #ff0070);
+    border-left: 1px solid var(--decorated-zone-border-color, #ff0070);
 }
