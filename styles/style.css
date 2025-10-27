@@ -15,7 +15,7 @@
 
     display: grid;
 
-    min-height: 100vh;
+    min-height: calc(100vh - 20px);
     margin: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
