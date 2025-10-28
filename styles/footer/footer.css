@@ -1,9 +1,4 @@
 .footer {
-    margin-top: 46px;
-    display: grid;
-
-    min-height: 100vh;
-
     place-items: center;
 }
 
